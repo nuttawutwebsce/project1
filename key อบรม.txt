@@ -1,0 +1,16 @@
+  git config --global user.email "60143610@cmru.ac.th"
+  git config --global user.name "Nuttawut Chaingam"
+สร้างโปรเจค
+git init
+git add .
+git log จะแสดงว่าเราแก้ไขอะไรบ้าง
+git commit -m บันทึกคอมแม้น
+git push อัพขึ้น git
+
+cmd
+dir ดูว่ามีออกไรบ้าง
+
+composer create-project laravel/laravel project1 --prefer-dist
+สึ่งให้ composer สร้างโปรเจค
+
+php  artisan serve เพื่อเปิดใช้งาน ctrl+c เพื่อหยุด

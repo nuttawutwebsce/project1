@@ -13,19 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/user/{name}', function ($name) {  //รับค่าจาก url {name}
-        return "สัวสดี $name";
-});
+// Route::get('/user/{name}', function ($name) {  //รับค่าจาก url {name}
+//         return "สัวสดี $name";
+// });
 
-Route::get("/บวกเลข/{num1}+{num2}", function ($num1,$num2) {
-    return $num1 + $num2;
-});
+// Route::get("/บวกเลข/{num1}+{num2}", function ($num1,$num2) {
+//     return $num1 + $num2;
+// });
 
-Route::get('/showdetail/{name}/{age}/{hi}', function ($name,$age,$hi) {
-    return "สวัสดี, $name $age $hi " ;
-});
+// Route::get('/showdetail/{name}/{age}/{hi}', function ($name,$age,$hi) {
+//     return "สวัสดี, $name $age $hi " ;
+// });
 
+//  Route::get('/','Homecontroller@index');
+// Route::get('/greeting/{name}','Homecontroller@greeting');
+// Route::get('/calculator/{num1}/{num2}/{num3}','Homecontroller@calculator');
+
+Route::get('/user',"UserController@index");
+Route::get('/user/show/{id}',"UserController@show" );
+Route::get('/user/update/{id}','UserController@update');
